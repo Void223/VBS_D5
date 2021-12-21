@@ -1,1 +1,34 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/Void223/VBS_D5/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/Void223/VBS_D5/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/Void223/VBS_D5/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/Void223/VBS_D5/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Andrej Kocev" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Andrej" ;
+  foaf:family_name "Kocev" ;
+  foaf:nick "Koce" ;
+  foaf:mbox_sha1sum "bfc8f8179fd9148e13e991734da4d14e89bce1f9" ;
+  foaf:homepage <https://www.instagram.com/andrej_kocev/> ;
+  foaf:phone <tel:070252075> ;
+  foaf:workplaceHomepage <https://seavus.com/> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Filip Tanevski" ;
+    foaf:mbox_sha1sum "18779511caf4f3969e24938405009bfe5d249a84" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/ftanevski/WBS_D5_CreatingLinkedData/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Robert Ilievski" ;
+    foaf:mbox_sha1sum "46a326fdad34d2d2cb3f9fcd8382d6df2f94fb88" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/.../wbs.../master/foaf.ttl>
+  ] .
